@@ -1,0 +1,36 @@
+body {
+	font: 16px/24px Helvetica, Sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	background-color: #efefef;
+	padding: 20px;
+
+	ul, li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		margin-right: 20px;
+		display: inline-block;
+		cursor: pointer;
+
+		&.active {
+			text-decoration: underline;
+			color: red;
+		}
+	}
+}
+
+.content {
+	padding: 20px;
+}
+
+pre {
+	background-color: #efefef;
+	padding: 10px;
+}
