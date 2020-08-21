@@ -26,7 +26,14 @@ class Cities extends React.Component {
 				<h1>Cities (Europe)</h1>
 				<ul>
 					{citiesList.map((city) => (
-						<li><Link href={`/time/${city.split('/')[1]}`}><a>{city.split('/')[1]}</a></Link></li>
+						<li>
+							<Link
+								href={`/time/[city]`}
+								as={`/time/${city.split('/')[1]}`}
+							>
+								<a>{city.split('/')[1]}</a>
+							</Link>
+						</li>
 					))}
 				</ul>
 			</Layout>
